@@ -1,0 +1,15 @@
+post curl
+
+curl --location 'http://localhost:8080/api/pet-type' \
+--header 'Content-Type: application/json' \
+--data '{
+    "petType": "Dogy",
+    "temperament": "Calm",
+    "length": 60,
+    "weight": 20
+}'
+
+
+get curl
+
+curl --location 'http://localhost:8080/api/pet-type'
